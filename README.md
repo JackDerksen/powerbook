@@ -35,7 +35,7 @@ https://github.com/user-attachments/assets/3d3cb034-8845-4999-a20f-629e7d9c8f0a
 - [Raycast](https://www.raycast.com/) is a must, I won't elaborate further.
 - [Helium](https://helium.computer/) is my favourite browser, I've been using it since *looong* before its public beta. Using it alongside [Kagi](https://kagi.com/) has been a wonderfully zen experience.
 - [Transmission](https://github.com/transmission/transmission) and [IINA](https://github.com/iina/iina) have me covered for all my media acquisition and consumption needs.
-
+- I use [gowall](https://github.com/Achno/gowall) to tune all of my wallpapers to the "viis" theme. The base wallpapers generally come from [Unsplash](https://unsplash.com/t/3d-renders).
 
 ---
 
