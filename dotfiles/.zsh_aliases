@@ -1,0 +1,54 @@
+#
+# ~/.zsh_aliases
+#
+
+########################################
+# Core QoL
+########################################
+alias cl='clear'
+
+alias boo='ghostty +boo'
+
+alias copy='cp' # HANK! HANK! DON'T ABBREVIATE CYBERPUNK!!!
+alias move='mv'
+alias rename='mv'
+
+mkcd() {
+  mkdir -p "$1" && cd "$1"
+}
+
+########################################
+# Editors & Tools
+########################################
+alias vim='redox'
+alias rdx='redox'
+
+alias fetch='fastfetch'
+alias cbonsai='cbonsai -l'
+
+alias cloc='cloc . --vcs git'
+
+########################################
+# Git
+########################################
+alias gs='git status'
+alias gb='git branch'
+alias gc='git checkout'
+alias ga='git add'
+alias gA='git add -A'
+alias gp='git push'
+
+# Show git diff stats
+alias gdiff='git diff --shortstat'
+
+# Rename master → main
+alias gitgood='git branch -m master main && git fetch --all --prune'
+
+########################################
+# Fuzzy helpers
+########################################
+# Open file in nvim via fzf + tmux popup
+alias ff='nvim "$(fd --type f --hidden --exclude .git | fzf-tmux -p)"'
+
+# Fuzzy cd into a directory
+alias dff='cd "$(fd --type directory --hidden --exclude .git | fzf-tmux -p)"'
