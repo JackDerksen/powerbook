@@ -1,0 +1,327 @@
+theme = "default"
+background_dimming = 0.5 # 0.0 disables popup background dimming; 1.0 is fully dimmed
+undo_tree_history_size = 5000
+icons_enabled = true
+
+[keybindings.normal]
+command = ";"
+
+[which_key]
+enabled = true
+delay_ms = 2000
+
+[[bind]]
+mode = "normal"
+keys = "<leader>rc"
+command = ":config reload"
+desc = "Reload configuration file"
+
+[[bind]]
+mode = "normal"
+keys = "<leader>tr"
+command = ":rain"
+desc = "Trigger rain"
+
+[themes.default.ui]
+#"status.mode_normal" = { fg="#67656f", bg="#333138" }
+"status.mode_normal" = { fg="#222125", bg="#333138" }
+
+# Gruvbox dark, medium contrast.
+# Palette source: https://github.com/ellisonleao/gruvbox.nvim
+[themes.gruvbox.palette]
+background = "#282828"
+color_column = "#3c3836"
+scope = "#504945"
+selection_bg = "#504945"
+selection_fg = "#ebdbb2"
+white = "#ebdbb2"
+black = "#3c3836"
+red = "#fb4934"
+green = "#b8bb26"
+yellow = "#fabd2f"
+blue = "#83a598"
+purple = "#d3869b"
+orange = "#fe8019"
+light_red = "#fb4934"
+light_green = "#b8bb26"
+light_yellow = "#fabd2f"
+light_blue = "#8ec07c"
+light_purple = "#d3869b"
+light_orange = "#fe8019"
+dark_gray = "#928374"
+mid_gray = "#a89984"
+light_gray = "#d5c4a1"
+
+[themes.gruvbox.syntax]
+markdown_code = "#8ec07c"
+markdown_emphasis = "#d3869b"
+markdown_frontmatter = "#928374"
+markdown_heading = "#fabd2f"
+markdown_highlight = { fg = "#282828", bg = "#b8bb26" }
+markdown_link = "#83a598"
+markdown_list_marker = "#fe8019"
+markdown_strong = "#fb4934"
+variable_builtin = "#d3869b"
+variable_parameter = "#fe8019"
+keyword = "#fb4934"
+keyword_operator = "#ebdbb2"
+keyword_import = "#8ec07c"
+type = "#fabd2f"
+type_builtin = "#fabd2f"
+type_definition = "#fabd2f"
+function = "#b8bb26"
+function_macro = "#8ec07c"
+function_method = "#b8bb26"
+string = "#b8bb26"
+string_escape = "#fe8019"
+character = "#b8bb26"
+number = "#d3869b"
+boolean = "#d3869b"
+float = "#d3869b"
+comment = "#928374"
+constant = "#d3869b"
+constant_builtin = "#d3869b"
+constant_macro = "#8ec07c"
+constructor = "#fabd2f"
+attribute = "#8ec07c"
+property = "#83a598"
+operator = "#ebdbb2"
+punctuation_delimiter = "#a89984"
+punctuation_bracket = "#ebdbb2"
+punctuation_special = "#fe8019"
+
+# Monokai Pro, default Pro filter.
+# Palette source: https://github.com/loctvl842/monokai-pro.nvim
+[themes.monokai-pro.palette]
+background = "#2d2a2e"
+color_column = "#403e41"
+scope = "#5b595c"
+selection_bg = "#5b595c"
+selection_fg = "#fcfcfa"
+white = "#fcfcfa"
+black = "#221f22"
+red = "#ff6188"
+green = "#a9dc76"
+yellow = "#ffd866"
+blue = "#78dce8"
+purple = "#ab9df2"
+orange = "#fc9867"
+light_red = "#ff6188"
+light_green = "#a9dc76"
+light_yellow = "#ffd866"
+light_blue = "#78dce8"
+light_purple = "#ab9df2"
+light_orange = "#fc9867"
+dark_gray = "#727072"
+mid_gray = "#939293"
+light_gray = "#c1c0c0"
+
+[themes.monokai-pro.syntax]
+markdown_code = "#78dce8"
+markdown_emphasis = "#ab9df2"
+markdown_frontmatter = "#727072"
+markdown_heading = "#ffd866"
+markdown_highlight = { fg = "#2d2a2e", bg = "#ffd866" }
+markdown_link = "#78dce8"
+markdown_list_marker = "#fc9867"
+markdown_strong = "#ff6188"
+variable_builtin = "#ab9df2"
+variable_parameter = "#fc9867"
+keyword = "#ff6188"
+keyword_operator = "#ff6188"
+keyword_import = "#ff6188"
+type = "#78dce8"
+type_builtin = "#78dce8"
+type_definition = "#78dce8"
+function = "#a9dc76"
+function_macro = "#78dce8"
+function_method = "#a9dc76"
+string = "#ffd866"
+string_escape = "#fc9867"
+character = "#ffd866"
+number = "#ab9df2"
+boolean = "#ab9df2"
+float = "#ab9df2"
+comment = "#727072"
+constant = "#ab9df2"
+constant_builtin = "#ab9df2"
+constant_macro = "#78dce8"
+constructor = "#a9dc76"
+attribute = "#78dce8"
+property = "#fcfcfa"
+operator = "#ff6188"
+punctuation_delimiter = "#c1c0c0"
+punctuation_bracket = "#fcfcfa"
+punctuation_special = "#fc9867"
+
+[themes.gruvbox.ui]
+"git.added" = { fg = "#b8bb26", bg = "#282828" }
+"git.modified" = { fg = "#fabd2f", bg = "#282828" }
+"git.conflict" = { fg = "#fe8019", bg = "#282828" }
+"git.removed" = { fg = "#fb4934", bg = "#282828" }
+"status.bar" = { fg = "#ebdbb2", bg = "#3c3836" }
+"status.path" = { fg = "#a89984", bg = "#3c3836" }
+"status.dirty" = { fg = "#fabd2f", bg = "#3c3836" }
+"status.mode_normal" = { fg = "#282828", bg = "#83a598" }
+"status.mode_insert" = { fg = "#282828", bg = "#b8bb26" }
+"status.mode_command" = { fg = "#282828", bg = "#fb4934" }
+"status.mode_visual" = { fg = "#282828", bg = "#d3869b" }
+"status.metadata_wrapper" = { fg = "#3c3836", bg = "#504945" }
+"status.metadata_content" = { fg = "#ebdbb2", bg = "#504945" }
+"status.coords_wrapper" = { fg = "#3c3836", bg = "#504945" }
+"status.coords_content" = { fg = "#ebdbb2", bg = "#504945" }
+"status.minimap_wrapper" = { fg = "#3c3836", bg = "#504945" }
+"status.minimap_content" = { fg = "#ebdbb2", bg = "#504945" }
+"status.minimap" = { fg = "#928374", bg = "transparent" }
+"status.minimap_alt" = { fg = "transparent", bg = "#a89984" }
+"about.border" = "#a89984"
+"about.title" = "#fabd2f"
+"about.text" = "#ebdbb2"
+"about.logo_red" = "#fb4934"
+"about.logo_white" = "#ebdbb2"
+"about.logo_blue" = "#83a598"
+"command_line.border" = "#a89984"
+"command_line.title" = "#fb4934"
+"command_line.text" = "#ebdbb2"
+"command_line.prompt" = "#fabd2f"
+"which_key.background" = "#3c3836"
+"which_key.edge" = "#fabd2f"
+"which_key.prefix" = "#d3869b"
+"which_key.key" = "#83a598"
+"which_key.arrow" = "#d5c4a1"
+"which_key.text" = "#ebdbb2"
+"diagnostic.error" = { fg = "#fb4934", bg = "#3c3836" }
+"diagnostic.warning" = { fg = "#fabd2f", bg = "#3c3836" }
+"diagnostic.information" = { fg = "#83a598", bg = "#3c3836" }
+"diagnostic.hint" = { fg = "#8ec07c", bg = "#3c3836" }
+"explorer.border" = "#a89984"
+"explorer.title" = "#fabd2f"
+"explorer.file" = "#ebdbb2"
+"explorer.directory" = "#83a598"
+"explorer.executable" = "#b8bb26"
+"explorer.hidden" = "#928374"
+"finder.border" = "#a89984"
+"finder.title" = "#fabd2f"
+"finder.text" = "#ebdbb2"
+"finder.prompt" = "#8ec07c"
+"finder.query_title" = "#d3869b"
+"finder.dim" = "#928374"
+"finder.match_highlight" = "#fabd2f"
+"finder.selected" = { fg = "#ebdbb2", bg = "#504945" }
+"finder.pinned_bg" = { fg = "#ebdbb2", bg = "#3c3836" }
+"finder.pinned_marker" = { fg = "#8ec07c", bg = "#3c3836" }
+"finder.hotkey" = { fg = "#d3869b", bg = "#3c3836" }
+"finder.preview_title" = "#83a598"
+"finder.preview_path" = "#928374"
+"perf.border" = "#a89984"
+"perf.title" = "#fabd2f"
+"perf.text" = "#ebdbb2"
+"perf.label" = "#928374"
+"perf.value" = "#d5c4a1"
+"perf.dim" = "#928374"
+"perf.good" = "#b8bb26"
+"perf.warn" = "#fabd2f"
+"perf.hot" = "#fb4934"
+"perf.bar_bg" = { fg = "#928374", bg = "#3c3836" }
+"undo_tree.title" = "#83a598"
+"undo_tree.text" = "#ebdbb2"
+"undo_tree.selected" = { fg = "#ebdbb2", bg = "#504945" }
+"undo_tree.selected_indicator" = "#d3869b"
+"undo_tree.node" = "#d5c4a1"
+"undo_tree.node_label" = "#83a598"
+"undo_tree.redo_marker" = "#8ec07c"
+"undo_tree.edge" = "#a89984"
+"undo_tree.timestamp" = "#928374"
+"undo_tree.preview_title" = "#83a598"
+"undo_tree.preview_label" = "#a89984"
+"undo_tree.preview_text" = "#ebdbb2"
+"undo_tree.preview_dim" = "#928374"
+"undo_tree.preview_separator" = "#a89984"
+"undo_tree.preview_deleted" = "#fb4934"
+"undo_tree.preview_inserted" = "#b8bb26"
+
+[themes.monokai-pro.ui]
+"git.added" = { fg = "#a9dc76", bg = "#2d2a2e" }
+"git.modified" = { fg = "#ffd866", bg = "#2d2a2e" }
+"git.conflict" = { fg = "#fc9867", bg = "#2d2a2e" }
+"git.removed" = { fg = "#ff6188", bg = "#2d2a2e" }
+"status.bar" = { fg = "#fcfcfa", bg = "#221f22" }
+"status.path" = { fg = "#939293", bg = "#221f22" }
+"status.dirty" = { fg = "#ffd866", bg = "#221f22" }
+"status.mode_normal" = { fg = "#2d2a2e", bg = "#78dce8" }
+"status.mode_insert" = { fg = "#2d2a2e", bg = "#a9dc76" }
+"status.mode_command" = { fg = "#2d2a2e", bg = "#ff6188" }
+"status.mode_visual" = { fg = "#2d2a2e", bg = "#ab9df2" }
+"status.metadata_wrapper" = { fg = "#221f22", bg = "#403e41" }
+"status.metadata_content" = { fg = "#fcfcfa", bg = "#403e41" }
+"status.coords_wrapper" = { fg = "#221f22", bg = "#403e41" }
+"status.coords_content" = { fg = "#fcfcfa", bg = "#403e41" }
+"status.minimap_wrapper" = { fg = "#221f22", bg = "#403e41" }
+"status.minimap_content" = { fg = "#fcfcfa", bg = "#403e41" }
+"status.minimap" = { fg = "#727072", bg = "transparent" }
+"status.minimap_alt" = { fg = "transparent", bg = "#939293" }
+"about.border" = "#939293"
+"about.title" = "#ffd866"
+"about.text" = "#fcfcfa"
+"about.logo_red" = "#ff6188"
+"about.logo_white" = "#fcfcfa"
+"about.logo_blue" = "#78dce8"
+"command_line.border" = "#939293"
+"command_line.title" = "#ff6188"
+"command_line.text" = "#fcfcfa"
+"command_line.prompt" = "#ffd866"
+"which_key.background" = "#403e41"
+"which_key.edge" = "#ffd866"
+"which_key.prefix" = "#ab9df2"
+"which_key.key" = "#78dce8"
+"which_key.arrow" = "#c1c0c0"
+"which_key.text" = "#fcfcfa"
+"diagnostic.error" = { fg = "#ff6188", bg = "#403e41" }
+"diagnostic.warning" = { fg = "#ffd866", bg = "#403e41" }
+"diagnostic.information" = { fg = "#78dce8", bg = "#403e41" }
+"diagnostic.hint" = { fg = "#a9dc76", bg = "#403e41" }
+"explorer.border" = "#939293"
+"explorer.title" = "#ffd866"
+"explorer.file" = "#fcfcfa"
+"explorer.directory" = "#78dce8"
+"explorer.executable" = "#a9dc76"
+"explorer.hidden" = "#727072"
+"finder.border" = "#939293"
+"finder.title" = "#ffd866"
+"finder.text" = "#fcfcfa"
+"finder.prompt" = "#78dce8"
+"finder.query_title" = "#ab9df2"
+"finder.dim" = "#727072"
+"finder.match_highlight" = "#ffd866"
+"finder.selected" = { fg = "#fcfcfa", bg = "#5b595c" }
+"finder.pinned_bg" = { fg = "#fcfcfa", bg = "#403e41" }
+"finder.pinned_marker" = { fg = "#78dce8", bg = "#403e41" }
+"finder.hotkey" = { fg = "#ab9df2", bg = "#403e41" }
+"finder.preview_title" = "#78dce8"
+"finder.preview_path" = "#727072"
+"perf.border" = "#939293"
+"perf.title" = "#ffd866"
+"perf.text" = "#fcfcfa"
+"perf.label" = "#727072"
+"perf.value" = "#c1c0c0"
+"perf.dim" = "#727072"
+"perf.good" = "#a9dc76"
+"perf.warn" = "#ffd866"
+"perf.hot" = "#ff6188"
+"perf.bar_bg" = { fg = "#727072", bg = "#403e41" }
+"undo_tree.title" = "#78dce8"
+"undo_tree.text" = "#fcfcfa"
+"undo_tree.selected" = { fg = "#fcfcfa", bg = "#5b595c" }
+"undo_tree.selected_indicator" = "#ab9df2"
+"undo_tree.node" = "#c1c0c0"
+"undo_tree.node_label" = "#78dce8"
+"undo_tree.redo_marker" = "#ab9df2"
+"undo_tree.edge" = "#939293"
+"undo_tree.timestamp" = "#727072"
+"undo_tree.preview_title" = "#78dce8"
+"undo_tree.preview_label" = "#939293"
+"undo_tree.preview_text" = "#fcfcfa"
+"undo_tree.preview_dim" = "#727072"
+"undo_tree.preview_separator" = "#939293"
+"undo_tree.preview_deleted" = "#ff6188"
+"undo_tree.preview_inserted" = "#a9dc76"

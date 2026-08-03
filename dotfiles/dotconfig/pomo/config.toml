@@ -1,0 +1,36 @@
+[gradient]
+start = 0x9BE3ED
+end   = 0xE2E2E3
+
+[ui]
+text_color = 0xE2E2E3
+dim_text_color = 0x27262A
+bar_width = 15
+show_selector_hints = false
+show_timer_hints = false
+show_timer_split_label = false
+show_timer_percent = true
+work_label = "Focus"
+break_label = "Break Time"
+top_padding_lines = 0
+
+[ui.bar]
+filled_char = "█"
+unfilled_char = " "
+unfilled_color = 0x27262A
+
+[[splits]]
+label = "25/5"
+work_minutes = 25
+break_minutes = 5
+
+[[splits]]
+label = "50/10"
+work_minutes = 50
+break_minutes = 10
+
+[[splits]]
+label = "Deep work"
+work_minutes = 90
+break_minutes = 10
+

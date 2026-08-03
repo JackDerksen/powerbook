@@ -1,0 +1,40 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            // "shift shift": "file_finder::Toggle"
+        },
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            // "j k": "vim::NormalBefore"
+        },
+    },
+    {
+        "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+        "bindings": {
+            "space z z": "workspace::ToggleCenteredLayout",
+        },
+    },
+    {
+        "context": "ProjectPanel && not_editing",
+        "bindings": {
+            "o": "project_panel::NewFile",
+            "O": "project_panel::NewDirectory",
+            "r": "project_panel::Rename",
+            "d": "project_panel::Delete",
+            "x": "project_panel::Cut",
+            "y": "project_panel::Copy",
+            "p": "project_panel::Paste",
+            // Close project panel as project file panel on the right
+        },
+    },
+]
