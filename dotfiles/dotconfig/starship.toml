@@ -1,0 +1,39 @@
+add_newline = true
+
+format = "$directory$git_branch$git_status$line_break$character"
+
+[directory]
+style = "bold #5f5c66"
+truncate_to_repo = false
+truncation_length = 0
+home_symbol = "~"
+
+[character]
+format = "[$symbol](#b4befe) "
+success_symbol = "❯"
+error_symbol   = "❯"
+vicmd_symbol   = "❯"
+
+[git_branch]
+format = "[$symbol$branch ](#333137)"
+symbol = " "
+
+[git_status]
+style = "#5f5c66"
+format = "([$all_status$ahead_behind]($style))"
+
+stashed   = "[≡ ](#9be3ed)"
+ahead     = "[⇡${count} ](#bcf092)"
+behind    = "[⇣${count} ](#fc808f)"
+#staged    = "[](#f3e48c)"
+#untracked = "[∘](#fc808f)"
+#modified = "[△](#ffac72)"
+
+# Explicitly disable the rest
+staged     = ""
+untracked  = ""
+modified   = ""
+deleted    = ""
+renamed    = ""
+conflicted = ""
+diverged   = ""
