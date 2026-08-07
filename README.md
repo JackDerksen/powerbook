@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/3d3cb034-8845-4999-a20f-629e7d9c8f0a
 
 ### Editors
 - **[Redox](https://github.com/JackDerksen/redox)** - My own terminal-based editor, built from the ground up to meet my needs and preferences. Don't worry -- it still supports configuration, just for you!
-- **[Zed](https://zed.dev/)** - For when I need a bit more power than Redox can provide. Lightly customized, with my own theme and everything.
+- **[Zed](https://zed.dev/)** - For when I need a bit more power than Redox can provide. Lightly customized, with my own theme and everything. I'm experimenting with VS Code again too, but Zed still has by far the best vim mode of any mainstream editor I've used.
 
 ### Other CLI Stuff
 - **[lx-cli](https://github.com/JackDerksen/lx-cli)** - `lx` is my own alternative to the traditional `ls` command, with nicer formatting and lots of customization options.
