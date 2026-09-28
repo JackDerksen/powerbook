@@ -3,30 +3,31 @@ directory = "blue"
 executable = "red"
 regular = "white"
 
-[icons]
-directory = ""
-executable = ""
-regular = ""
-hidden = ""
-
 [icons.colors]
 directory = "blue"
 executable = "red"
 regular = "white"
 hidden = "bright_black"
 
+[icons]
+directory = ""
+executable = ""
+regular = ""
+
 [display]
 column_spacing = 2
 max_rows = 0
+compact_max_rows = 10
+datetime_format = "%-d %b %H:%M"
+long_format_titles = false
 long_format_fields = [
-    "filename",
-    "size",
-    "modified",
+    "permissions",
     "owner",
     "group",
-    "permissions",
+    "size",
+    "modified",
+    "filename",
 ]
 
 [display.tree]
 style = "ascii"
-recursive_long_format = "nested"
