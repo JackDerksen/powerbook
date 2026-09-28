@@ -1,9 +1,6 @@
 auto-update-channel = stable
 
 # Window
-# This position makes it centered with my "almost fullscreen" command
-#window-width = 103
-#window-height = 29
 window-width = 89
 window-height = 28
 theme = viis
@@ -12,17 +9,34 @@ macos-titlebar-proxy-icon = hidden
 window-padding-x = 6
 window-padding-y = 6
 shell-integration-features = no-cursor,no-title
-split-divider-color = "#3d404b"
+split-divider-color = "#67656F"
 
 # Font
 font-family = "Geist Mono"
-font-size = 23
 font-style = Medium
-font-feature = -calt, -liga, -dlig
+
+font-family-bold = "Geist Mono"
+font-style-bold = Bold
+
+font-family-italic = "Geist Mono"
+font-style-italic = Medium Italic
+
+font-family-bold-italic = "Geist Mono"
+font-style-bold-italic = Bold Italic
+
+font-size = 23
+font-feature = -calt, liga, -dlig
 
 # Cursor
 cursor-style = block
 cursor-style-blink = false
+
+# Search
+search-foreground = "#E2E2E3"
+search-background = "#222024"
+
+search-selected-foreground = "#E2E2E3"
+search-selected-background = "#67656F"
 
 # Keybinds
 keybind = ctrl+cmd+-=new_split:down
