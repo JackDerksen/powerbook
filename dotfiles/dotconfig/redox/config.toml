@@ -4,18 +4,15 @@ undo_tree_history_size = 5000
 icons_enabled = true
 
 mouse = true
-mouse_scroll_step_vertical = 2
-mouse_scroll_step_horizontal = 2
+mouse_scroll_step_vertical = 1
+mouse_scroll_step_horizontal = 1
+
+[animations]
+save_confirmation_ms = 1000
 
 [logging]
 enabled = true
 max_events = 5000
-
-[keybindings.normal]
-command = ";"
-
-[keybindings.visual]
-command = ";"
 
 [which_key]
 enabled = true
@@ -43,8 +40,32 @@ keys = "<leader>tr"
 command = ":rain"
 desc = "Trigger rain"
 
+[[bind]]
+mode = "normal"
+keys = "[b"
+command = ":bprev"
+desc = "Previous buffer"
+
+[[bind]]
+mode = "normal"
+keys = "]b"
+command = ":bnext"
+desc = "Next buffer"
+
+# Personal UI style overrides
 [themes.default.ui]
 "status.mode_normal" = { fg="#222125", bg="#333138" }
+"status.bar" = { fg = "#68656f", bg = "#222125" }
+"status.path" = { fg = "#333137", bg = "#222125" }
+"status.dirty" = { fg = "#68656f", bg = "#222125" }
+"status.language_icon" = { fg = "#68656f", bg = "#222125"}
+"status.metadata_content" = { fg = "#222125", bg = "#333137" }
+"status.coords_content" = { fg = "#222125", bg = "#333137" }
+"status.minimap" = { fg = "#68656f", bg = "transparent" }
+"status.minimap_alt" = { fg = "transparent", bg = "#68656f" }
 
 [themes.default.palette]
 "selection_bg" = "#222024"
+
+[themes.default.syntax]
+"type" = { italic = true }
