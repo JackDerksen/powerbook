@@ -1,33 +1,3 @@
-[colors]
-directory = "blue"
-executable = "red"
-regular = "white"
-
-[icons.colors]
-directory = "blue"
-executable = "red"
-regular = "white"
-hidden = "bright_black"
-
+# This is all I need now, as everything else I used to change has been implemented as the default settings!
 [icons]
-directory = ""
-executable = ""
-regular = ""
-
-[display]
-column_spacing = 2
-max_rows = 0
-compact_max_rows = 10
-datetime_format = "%-d %b %H:%M"
-long_format_titles = false
-long_format_fields = [
-    "permissions",
-    "owner",
-    "group",
-    "size",
-    "modified",
-    "filename",
-]
-
-[display.tree]
-style = "ascii"
+enabled = true
