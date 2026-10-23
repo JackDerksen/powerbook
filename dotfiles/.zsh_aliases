@@ -47,8 +47,20 @@ alias gitgood='git branch -m master main && git fetch --all --prune'
 ########################################
 # Fuzzy helpers
 ########################################
-# Open file in nvim via fzf + tmux popup
-alias ff='nvim "$(fd --type f --hidden --exclude .git | fzf-tmux -p)"'
+# Open file in Redox via skim + tmux popup
+ff() {
+  local file
+  file=$(fd --type f --hidden --exclude .git |
+    sk --popup center,50%,50%) || return
+
+  [[ -n $file ]] && redox "$file"
+}
 
 # Fuzzy cd into a directory
-alias dff='cd "$(fd --type directory --hidden --exclude .git | fzf-tmux -p)"'
+dff() {
+  local directory
+  directory=$(fd --type directory --hidden --exclude .git |
+    sk --popup center,50%,50%) || return
+
+  [[ -n $directory ]] && builtin cd -- "$directory"
+}
