@@ -38,15 +38,15 @@ path=(
 )
 
 ########################################
-# FZF colours
+# Skim colours
 ########################################
-export FZF_DEFAULT_OPTS="
-  --color=bg+:#2D2B30,bg:#1A191C,spinner:#9BE3ED,hl:#FC808F,gutter:#1A191C
-  --color=fg:#67656F,header:#FC808F,info:#333138,pointer:#9BE3ED,border:#222125
-  --color=marker:#B4BEFE,fg+:#E2E2E3,prompt:#67656F,hl+:#9BE3ED
-"
+export SKIM_DEFAULT_OPTIONS='--color=bg:#1A191C,current_bg:#2D2B30,fg:#67656F,current:#E2E2E3,matched:#FC808F,matched_bg:#1A191C,current_match:#9BE3ED,current_match_bg:#2D2B30,spinner:#9BE3ED,header:#FC808F,info:#333138,cursor:#9BE3ED,selected:#B4BEFE,prompt:#67656F,border:#222125'
 
-command -v fzf >/dev/null && eval "$(fzf --zsh)"
+if command -v sk >/dev/null; then
+  autoload -Uz compinit
+  compinit
+  source <(sk --shell zsh --shell-bindings)
+fi
 
 ########################################
 # Colours
